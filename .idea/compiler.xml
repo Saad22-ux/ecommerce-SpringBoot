@@ -20,6 +20,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ms-discovery" />
         <module name="ms-config" />
+        <module name="ms-gateway" />
       </profile>
     </annotationProcessing>
   </component>
@@ -29,6 +30,7 @@
       <module name="ms-commande" options="-parameters" />
       <module name="ms-config" options="-parameters" />
       <module name="ms-discovery" options="-parameters" />
+      <module name="ms-gateway" options="-parameters" />
       <module name="ms-produit" options="-parameters" />
     </option>
   </component>
