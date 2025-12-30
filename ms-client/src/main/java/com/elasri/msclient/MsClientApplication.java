@@ -1,13 +1,17 @@
 package com.elasri.msclient;
 
+import com.elasri.msclient.config.GlobalConfig;
+import com.elasri.msclient.config.TestParam;
 import com.elasri.msclient.entities.Client;
 import com.elasri.msclient.repositories.ClientRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@EnableConfigurationProperties({GlobalConfig.class, TestParam.class})
 public class MsClientApplication {
 
     public static void main(String[] args) {
@@ -39,5 +43,4 @@ public class MsClientApplication {
             clientRepository.save(clt3);
         };
     }
-
 }
